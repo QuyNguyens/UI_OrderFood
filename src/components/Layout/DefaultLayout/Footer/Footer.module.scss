@@ -1,0 +1,17 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    align-items: center;
+    margin-top: 40px;
+    border-top: 1px solid var(--border-mild);
+    div{
+        display: flex;
+        align-items: center;
+        span{
+            font-weight: 600;
+            font-size: 18px;
+            margin-left: 5px;
+        }
+    }
+}

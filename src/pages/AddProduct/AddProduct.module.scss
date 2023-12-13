@@ -1,0 +1,76 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    .box-add{
+        width: 500px;
+        padding: 15px;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        h1{
+            text-align: center;
+            color: var(--primary-color);
+            font-size: 40px;
+            font-weight: 700;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            input{
+                padding: 10px;
+                margin: 7px 0;
+                border: 1px solid var(--primary-color);
+                background-color: var(--background-input);
+                border-radius: 15px;
+            }
+            textarea{
+                border: 1px solid var(--primary-color);
+                padding: 20px 10px;
+                font-size: 18px;
+                margin: 7px 0;
+                outline: none;
+            }
+            p{
+                display: flex;
+                align-items: center;
+                border: 1px solid;
+                border-radius: 20px;
+                font-weight: 600;
+                font-size: 23px;
+                padding: 10px;
+                input{
+                    display:none;
+                }
+                svg{
+                    margin: 0 10px;
+                    width: 30px;
+                }
+                img{
+                    border-radius: 10px;
+                    width: 200px;
+                }
+            }
+            button{
+                padding: 15px 0;
+                background-color: var(--primary-color);
+                color: white;
+                font-weight: 700;
+                font-size: 20px;
+                border-radius: 15px;
+            }
+            .size{
+                display: flex;
+                justify-content: space-evenly;
+                h6{
+                    span{
+                        margin-right: 10px;
+                    }
+                    select{
+                        margin: 0;
+                        padding: 0 !important;
+                    }
+                }
+            }
+        }
+    }
+}

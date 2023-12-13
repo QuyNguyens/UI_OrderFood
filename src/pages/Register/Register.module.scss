@@ -1,0 +1,76 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    .form-center{
+        width: 400px;
+        text-align: center;
+        padding: 10px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        h1{
+            color: var(--primary-color);
+            font-size: 40px;
+            font-weight: 700;
+            margin: 20px;
+        }
+        h2{
+            margin: 20px 0;
+            font-weight: 500;
+            font-size: 18px;   
+            color: var(--word-color-mild); 
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            input{
+                width: 95%;
+                background-color: var(--background-input);
+                padding: 15px;
+                margin: 5px;
+                border-radius: 15px;
+                border: 1px solid orange;
+            }
+            button{
+                width: 95%;
+                background-color: var(--primary-color);
+                color: white;
+                font-size: 25px;
+                font-weight: 600;
+                padding: 10px;
+                border-radius: 15px;
+                margin-top: 5px;
+            }
+            div{
+                padding: 7px;
+                border: 1px solid var(--word-color-mild);
+                width: 95%;
+                border-radius: 10px;
+                img{
+                    width: 25px;
+                    height: 25px;
+                }
+                span{
+                    margin-left: 10px;
+                    font-weight: 600;
+                    font-size: 18px;
+                }
+            }
+        }
+        .border{
+            margin: 15px 0;
+            width: 100%;
+            border: 1px solid var(--border-mild);
+        }
+        h5{
+            color: var(--word-color-mild);
+            font-weight: 600;
+            a{
+                text-decoration: underline;
+                color: var(--word-color-mild);
+            }
+        }
+    }
+    
+}

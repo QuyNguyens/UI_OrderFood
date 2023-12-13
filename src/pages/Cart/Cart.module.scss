@@ -1,0 +1,132 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+    .container{
+        width: 85%;
+        h1{
+            text-align: center;
+            font-size: 40px;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin: 20px ;
+        }
+        .content{
+            display: flex;
+            justify-content: space-between;
+            .left{
+                width: 48%;
+                .left-list{
+                    overflow-y: scroll;
+                    max-height: 400px;
+                    .left-title-col{
+                        input{
+                            width: 5%;
+                        }
+                        span{
+                            font-size: 20px;
+                            font-weight: 600;
+                            color: var(--primary-color);
+                        }
+                    }
+                    .left-item{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding-bottom: 20px;
+                        margin: 10px 0;
+                        border-bottom: 1px solid var(--border-mild);
+                        input{
+                            width: 5%;
+                        }
+                        .left-img{
+                            width: 20%;
+                            height: 20%;
+                            img{
+                                width: 100%;
+                            }
+                        }
+                        .left-title{ 
+                            width: 35%;
+                            h5{
+                                font-weight: 700;
+                            }
+                            h6{
+                                margin: 10px 0;
+                            }
+                            p{
+                                font-weight: 600;
+                                span{
+                                    padding: 0 6px;
+                                    border: 2px solid var(--border-mild);
+                                }
+                                b{
+                                    padding: 0 12px;
+                                    border: 2px solid var(--border-mild);
+                                }
+                            }
+                        }
+                        .left-icon{
+                            padding: 8px;
+                            border: 2px solid var(--border-mild);
+                            border-radius: 12px;
+                        }
+                        h3{
+                            width: 13%;
+                        }
+                    }
+                }
+                .left-total{
+                    display: flex;
+                    justify-content: flex-end;
+                    div{
+                        display: flex;
+                        flex-direction: column;
+                        margin-right: 50px;
+                        span{
+                            font-size: 19px;
+                        }
+                    }
+                }
+            }
+            .right{
+                width: 48%;
+                padding: 20px;
+                border-radius: 10px;
+                background-color: var(--background-color-gray);
+                h4{
+                    margin: 10px 0;
+                }
+                div{
+                    margin: 7px 0;
+                    label{
+                        font-size: 19px;
+                        color: var(--word-color-mild);
+                        font-weight: 600;
+                    }
+                    input{
+                        font-size: 18px;
+                        padding: 10px;
+                        border: 1px solid var(--word-color-mild);
+                        width: 100%;
+                        border-radius: 10px;
+                    }
+                    select{
+                        width: 100%;
+                        padding: 5px 0;
+                    }
+                }
+                form{
+                    button{
+                        padding: 15px;
+                        text-align: center;
+                        font-weight: 600;
+                        width: 100%;
+                        color: white;
+                        font-size: 20px;
+                        border-radius: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

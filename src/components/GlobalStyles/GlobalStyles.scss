@@ -1,0 +1,32 @@
+@import 'normalize.css';
+:root{
+    --primary-color: rgb(255, 34, 0);
+    --primary-color-sub: rgb(244, 78, 53);
+    --background-input:rgb(246, 227, 225);
+    --background-input-mild:rgb(245, 216, 213);
+    --word-color-mild: rgb(107, 105, 105);
+    --background-color-mild: rgb(239, 238, 238);
+    --background-color-gray: rgb(234, 233, 233);
+    --border-mild:rgb(227, 225, 225);
+    --red-mild: rgb(255, 0, 0);
+}
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul,li{
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+input,button{
+    border: none;
+    outline: none;
+    background: transparent;
+}
+h1,h2,h3,h4,h5,h6,p {
+    padding: 0;
+    margin: 0;
+}

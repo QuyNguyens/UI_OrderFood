@@ -1,0 +1,50 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    position: sticky;
+    background-color: white;
+    top: 0;
+    left: 0;
+    .header-container{
+        width: 85%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center ;
+        font-size: 22px;
+        font-weight: 600; 
+        .header-page{
+            a{
+                color: rgb(100, 98, 98);
+                margin: 0 20px;           
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            .header-page-f{
+                color: var(--primary-color);
+                font-size: 30px;
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+        }
+        .header-right{
+            display: flex;
+            align-items: center;
+            a{
+                color: rgb(100, 98, 98);
+                margin: 10px;
+            }
+            .register{
+                padding: 10px 23px; 
+                border-radius: 25px;
+                background-color: orangered;
+                color: white;
+            }
+            svg{
+                margin-left: 10px;
+            }
+        }
+    }
+}
