@@ -2,9 +2,9 @@ import classNames from 'classnames/bind';
 import styles from './Order.module.scss';
 const cx = classNames.bind(styles);
 function OrderItem({data,order}) {
-    return <div>
+    return <div className={cx('order-items')}>
             {data && data.map((item,index) =>{
-                return <div key={index}>
+                return <div className={cx('order-item')} key={index}>
                         {index ==0 && <h3>{order.status?'Success':'Pending'}</h3>}
                         <div className={cx('list-items')}>
                             <img src={"http://localhost:3000/uploads/"+item.image} alt="" />
@@ -17,14 +17,14 @@ function OrderItem({data,order}) {
                             </div>
                             <h6>${item.price * item.quality + item.priceSize}</h6>
                         </div>
-                        {index == (data.length-1) && <div className={cx('address-total')}>
+                        {index == (data?.length-1) && <div className={cx('address-total')}>
                             <button>View Your address</button>
                             <div>
                                 <h5>Time Order</h5>
-                                <span>Date: <b>{order.createdAt}</b></span><br />
-                                <span>Time: <b>{order.createdAt}</b></span>
+                                <span>Date: <b>{order?.createdAt}</b></span><br />
+                                <span>Time: <b>{order?.createdAt}</b></span>
                             </div>
-                            <span>Total: <b>${order.totalPrice}</b></span>
+                            <span>Total: <b>${order?.totalPrice}</b></span>
                         </div>}
                     </div>
             })}
